@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><h1>Movie Recommender Results</h1></head>
+<body>
+  <div style="width: 100%; overflow: hidden;">
+  <div style="width: 5%; float: left;">  
+  {% for item in movies %}
+
+    {% if 'Recommendation' in item %}
+       </div><div style="width: 30%; margin: 2px; border:1px solid black; padding: 2px; float: left;"> 
+       <h3><p style="color: blue"> {{ item }} </p></br></h3>
+    {% else %}
+        <h5><p> {{ item }} </p></h5>
+    {% endif %}
+    
+{% endfor %}
+</div></div>
+</body>
+</html>
